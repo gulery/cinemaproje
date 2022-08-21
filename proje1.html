@@ -8,129 +8,125 @@
     <link rel="stylesheet" href="./proje1.css" />
   </head>
   <body>
-    <div class="image">
-      <img src="./background_image.jpg" alt="resim" />
+    <div class="div2">
+      <h1>NET <span>FLIX</span></h1>
 
-      <div class="div2">
-        <h1 class="hnet">NET</h1>
-        <h1 class="hflix">FLIX</h1>
-        <p>Thank you for signing up at Netflix. Tell us more about your self</p>
+      <p>Thank you for signing up at Netflix. Tell us more about your self</p>
 
+      <div>
+        <form action="result.html"></form>
+      </div>
+      <br />
+
+      <div class="div1">
         <div>
-          <form action="result.html"></form>
+          <label for="name">Name</label><br />
+          <br />
+          <input
+            id="name"
+            type="text"
+            name="name"
+            value=""
+            placeholder="Enter your name"
+            required
+          />
         </div>
         <br />
 
-        <div class="div1">
-          <div>
-            <label for="name">Name</label><br />
-            <br />
-            <input
-              id="name"
-              type="text"
-              name="name"
-              value=""
-              placeholder="Enter your name"
-              required
-            />
-          </div>
+        <div>
+          <label for="age">Age</label> <br />
           <br />
+          <input
+            id="age"
+            type="number"
+            name="age"
+            value="0"
+            placeholder="Age"
+          />
+        </div>
+        <br />
 
-          <div>
-            <label for="age">Age</label> <br />
-            <br />
-            <input
-              id="age"
-              type="number"
-              name="age"
-              value="0"
-              placeholder="Age"
-            />
-          </div>
+        <div>
+          <label for="email">Email</label> <br />
           <br />
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+          />
+        </div>
+        <br />
 
-          <div>
-            <label for="email">Email</label> <br />
-            <br />
-            <input
-              id="email"
-              type="email"
-              name="email"
-              placeholder="Enter your email"
-            />
-          </div>
+        <div>
+          <label for="content">Content type</label> <br />
           <br />
+          <select name="content" id="content">
+            <optgroup label="Series">
+              <option value="1.series">1.Series</option>
+              <option value="2.series">2.Series</option>
+              <option value="3.series">3.Series</option>
+              <option value="4.series">4.Series</option>
+            </optgroup>
+            <optgroup label="movies">
+              <option value="1.movies">1.movies</option>
+              <option value="2.movies">2.movies</option>
+              <option value="3.movies">3.movies</option>
+              <option value="4.movies">4.movies</option>
+            </optgroup>
+          </select>
+        </div>
+        <br />
 
-          <div>
-            <label for="content">Content type</label> <br />
-            <br />
-            <select name="content" id="content">
-              <optgroup label="Series">
-                <option value="1.series">1.Series</option>
-                <option value="2.series">2.Series</option>
-                <option value="3.series">3.Series</option>
-                <option value="4.series">4.Series</option>
-              </optgroup>
-              <optgroup label="movies">
-                <option value="1.movies">1.movies</option>
-                <option value="2.movies">2.movies</option>
-                <option value="3.movies">3.movies</option>
-                <option value="4.movies">4.movies</option>
-              </optgroup>
-            </select>
-          </div>
+        <div>
+          <label for="movie">Movie type</label> <br />
+          <input type="radio" name="movie" id="comedy" value="comedy" />
+
+          <label for="comedy">Comedy</label> <br />
+          <input type="radio" name="action" id="action" value="action" />
+
+          <label for="action">Action</label> <br />
+          <input
+            type="radio"
+            name="romance"
+            id="romance"
+            value="romance"
+            checked
+          />
+
+          <label for="romance">Romance</label> <br />
+        </div>
+        <br />
+
+        <div>
+          <label for="gender">Gender</label> <br />
+          <input type="radio" name="gender" id="male" value="male" />
+          <label for="male">Male</label> <br />
+          <input type="radio" name="gender" id="female" value="female" />
+          <label for="female">Female</label> <br />
+          <input type="radio" name="gender" id="other" value="other" />
+          <label for="other">Other</label> <br />
+        </div>
+        <br />
+
+        <div>
+          <label for="feedback">Feed back</label>
           <br />
-
-          <div>
-            <label for="movie">Movie type</label> <br />
-            <input type="radio" name="movie" id="comedy" value="comedy" />
-
-            <label for="comedy">Comedy</label> <br />
-            <input type="radio" name="action" id="action" value="action" />
-
-            <label for="action">Action</label> <br />
-            <input
-              type="radio"
-              name="romance"
-              id="romance"
-              value="romance"
-              checked
-            />
-
-            <label for="romance">Romance</label> <br />
-          </div>
           <br />
+          <textarea
+            name="feedback"
+            id="feedback"
+            cols="30"
+            rows="5"
+            style="resize: none"
+            maxlength="100"
+            placeholder="Any comment"
+          ></textarea>
+        </div>
+        <br />
 
-          <div>
-            <label for="gender">Gender</label> <br />
-            <input type="radio" name="gender" id="male" value="male" />
-            <label for="male">Male</label> <br />
-            <input type="radio" name="gender" id="female" value="female" />
-            <label for="female">Female</label> <br />
-            <input type="radio" name="gender" id="other" value="other" />
-            <label for="other">Other</label> <br />
-          </div>
-          <br />
-
-          <div>
-            <label for="feedback">Feed back</label>
-            <br />
-            <br />
-            <textarea
-              name="feedback"
-              id="feedback"
-              cols="30"
-              rows="5"
-              style="resize: none"
-              maxlength="100"
-              placeholder="Any comment"
-            ></textarea>
-          </div>
-          <br />
-
-          <div class="div3">
-            <input type="submit" value="Submit" />
-          </div>
+        <div class="div3">
+          <input type="submit" value="Submit" />
         </div>
       </div>
     </div>
